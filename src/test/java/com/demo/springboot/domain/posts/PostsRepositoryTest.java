@@ -26,6 +26,9 @@ public class PostsRepositoryTest {
         postsRepository.deleteAll();
     }
 
+    @Test
+    public void dummy() {}
+
 //    @Test
 //    public void 게시글저장_불러오기() {
 //        // given

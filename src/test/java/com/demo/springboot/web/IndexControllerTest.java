@@ -16,6 +16,8 @@ public class IndexControllerTest {
     @Autowired
     private TestRestTemplate restTemplate;
 
+    @Test
+    public void dummy() {}
 //    @Test
 //    public void 메인페이지_로딩() {
 //        // when

@@ -64,6 +64,11 @@ public class PostsApiControllerTest {
                 .build();
     }
 
+    @Test
+    public void dummy() {
+        return;
+    }
+
 //    @Test
 //    @WithMockUser(roles="USER") // 인증된 모의 사용자 만들어 사
 //    public void Posts_등록된다() throws Exception {
