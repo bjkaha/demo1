@@ -16,15 +16,15 @@ import static org.assertj.core.api.Assertions.assertThat;
 @SpringBootTest // 별다른 설정없이 @SpringBootTest 하면 H2 데이터베이스 자동으로 실행해줌.
 public class PostsRepositoryTest {
 
-    @Autowired
-    PostsRepository postsRepository;
-
-    @After // 단위 테스트가 끝날 때 마다 수행됨.
-            // 전체 테스트 수행할 때 테스트간 데이터 침범 막기 위해 사용됨
-            // 여러 테스트 실행시 h2 데이터베이스에 데이터가 그대로 남아있어 다음 테스트 실행 시 실패할 수 있음.
-    public void cleanup() {
-        postsRepository.deleteAll();
-    }
+//    @Autowired
+//    PostsRepository postsRepository;
+//
+//    @After // 단위 테스트가 끝날 때 마다 수행됨.
+//            // 전체 테스트 수행할 때 테스트간 데이터 침범 막기 위해 사용됨
+//            // 여러 테스트 실행시 h2 데이터베이스에 데이터가 그대로 남아있어 다음 테스트 실행 시 실패할 수 있음.
+//    public void cleanup() {
+//        postsRepository.deleteAll();
+//    }
 
     @Test
     public void dummy() {}

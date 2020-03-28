@@ -37,32 +37,32 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class PostsApiControllerTest {
 
-    @LocalServerPort
-    private int port;
-
-    @Autowired
-    private TestRestTemplate restTemplate;
-
-    @Autowired
-    private PostsRepository postsRepository;
-
-    @After
-    public void tearDown() throws Exception {
-        postsRepository.deleteAll();
-    }
-
-    @Autowired
-    private WebApplicationContext context;
-
-    private MockMvc mvc;
-
-    @Before
-    public void setup() {
-        mvc = MockMvcBuilders
-                .webAppContextSetup(context)
-                .apply(springSecurity())
-                .build();
-    }
+//    @LocalServerPort
+//    private int port;
+//
+//    @Autowired
+//    private TestRestTemplate restTemplate;
+//
+//    @Autowired
+//    private PostsRepository postsRepository;
+//
+//    @After
+//    public void tearDown() throws Exception {
+//        postsRepository.deleteAll();
+//    }
+//
+//    @Autowired
+//    private WebApplicationContext context;
+//
+//    private MockMvc mvc;
+//
+//    @Before
+//    public void setup() {
+//        mvc = MockMvcBuilders
+//                .webAppContextSetup(context)
+//                .apply(springSecurity())
+//                .build();
+//    }
 
     @Test
     public void dummy() {
